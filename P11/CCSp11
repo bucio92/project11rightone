@@ -1,0 +1,104 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playpen+Sans&family=Poppins:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(96, 34, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(189, 140, 235);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+    width: 400px;
+    max-width: 100%;  
+}
+.header {
+    background-color: white;
+    border-bottom: 1px solid;
+    padding: 20px 40px;
+
+}
+.header h2 {
+    margin: 0 50px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border-radius: 4px;
+    display: block;
+    border: 2px solid;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+}
+.form-control.succes input {
+    border-color: rgb(53, 245, 53);
+    
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control.success material-symbols-outlined {
+    color: rgb(53, 245, 53);
+    visibility: visible;
+}
+
+.form-control.error material-symbols-outlined {
+    color: red;
+}
+
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form button {
+    background-color: white;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+    width: 50%;
+
+}
